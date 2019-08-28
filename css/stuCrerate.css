@@ -1,0 +1,36 @@
+#stu{
+    font-size: 1.2em;
+}
+.bc,.qx{
+   text-align: right;
+}
+textarea{
+    resize: none;
+}
+.form{
+    border: 1px solid white;
+    /*padding: 5% 0 0 15%;*/
+    width: 80%;
+    margin: auto;
+    /*text-align: center;*/
+}
+/*@media screen and (max-width: 992px){*/
+    /*.form{*/
+        /*border: 1px solid #ff34d2;*/
+        /*padding-left: 7%;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width: 786px){*/
+    /*.form{*/
+        /*border: 1px solid #4d74ff;*/
+        /*padding-left: 3%;*/
+        /*color: blueviolet;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:768px) {*/
+    /*.form{*/
+        /*border: 1px solid #40ff84;*/
+        /*padding-left: 0;*/
+        /*color: chartreuse;*/
+    /*}*/
+/*}*/

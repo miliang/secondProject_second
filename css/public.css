@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 13px;
+    font-family:"微软雅黑";
+    /*outline: solid;*/
+    /*border: 1px solid #b9b9b9;*/
+}
+body{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.header{
+    /*outline: 1px solid white;*/
+    margin: 1.5em 0 0 0 ;
+    height: 45px;
+    line-height: 45px;
+}
+.header>span,.return{
+    font-size: 1.5em;
+}
+.right{
+    text-align: right;
+}
+.form{
+    border:1px solid #c9c9c9;
+    margin-top: 1.5em;
+    padding: 20px 0;
+    border-radius: 0px;
+
+}
+label{
+    font-size: 12px;
+    font-weight: 300;
+}
+/*-----------btn颜色待定------------------*/
+
+.table{
+    margin-top: 1.5em;
+    text-align: center;
+}
+.text-right{
+   padding:2px 0;
+}
+.row>div{
+    margin: 10px 0;
+}
+.form>div>.text-right{
+    padding: 7px 0 0 0;
+    /*padding: 0 5px 0 0;*/
+}
+.form-group{
+    margin:0 0 0 3em ;
+}
+.form-control{
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    border-radius: 0;
+    height: 2em;
+    /*line-height: 1em;*/
+    padding: 3px 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+.btn:hover{
+    color: white;
+    background-color: #dcb728;
+}
+a{
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+i:hover{
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+.table{
+    outline: 1px solid #c9c9c9;
+    margin-top: 1.5em;
+    text-align: center;
+}
+/*.pencil{*/
+    /*color: rgb(108, 220, 204);*/
+/*}*/
+.pencil,.times,.eye,.circle{
+    font-size: 20px;
+}
+.times,.eye{
+    margin-left: 1.5em;
+}
+#ul{
+    width: 228px;
+    height: 30px;
+    line-height: 25px;
+    margin: 30px auto;
+    border: none;
+
+}
+#ul>li{
+    float: left;
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    list-style: none;
+    /*border-left: 1px solid white;*/
+}
+.btn{
+    color: white;
+    background-color: #dcb728;
+    border-radius: 0;
+    border: none;
+}
+/*按钮背景色根据按钮种类来定*/
+.ourBtn{
+    height: 1.8em;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.8em;
+}
+.tton{
+    height: 30px;
+    width: 35px;
+    font-size: 10px;
+    margin-left: 0;
+    padding: 0;
+    color: white;
+    border: none;
+}
+
+.tton:nth-child(1){
+    width: 40px;
+    border: none;
+}
+.tton:nth-of-type(2){
+    border: none;
+}
+.tton:nth-of-type(5){
+    width: 45px;
+}
+#but{
+    border:none;
+}
+.table>tbody>tr>td{
+    border-top: none;
+}
+.form-control::-webkit-input-placeholder{
+    color: #c9c9c9;
+}
+.btn-default.disabled{
+    background-color: inherit;
+    color: white;
+}
+.btn-default.disabled:hover{
+    background-color: inherit;
+    color: white;
+}
+/*模态框*/
+.modal-dialog {
+    width: 68%;
+    margin: 30px 10%;
+}
+.modal-content{
+    width: 120%;
+    background-color: rgba(187, 187, 187, 0.93);
+    border-radius: 0;
+}
+.col-md-1{
+    width: 8.9%;
+    text-align: center;
+}
+.table>tbody>tr>td{
+    /*outline: 1px solid ;*/
+    /*width: 80px;*/
+    vertical-align: middle;
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+    outline: 1px solid red;
+}
+.modal-header{
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    color: white;
+    background-color: rgb(220 ,183 ,40);
+}
+/*.modal-header>.close>span{*/
+    /*color: white;*/
+/*}*/
+/*.btn-default {*/
+    /*color: white;*/
+    /*background-color: rgb(220 , 183, 40);*/
+    /*border-color: inherit;*/
+/*}*/
+/*.btn-default:hover{*/
+    /*background-color: rgb(220 , 183, 40);*/
+    /*color: white;*/
+    /*border-color: inherit;*/
+/*}*/
+/*.btn-primary {*/
+    /*color: #fff;*/
+    /*background-color: rgb(220 , 183, 40);*/
+    /*border-color: inherit;*/
+/*}*/
+/*.btn-primary:hover {*/
+    /*color: #fff;*/
+    /*background-color:rgb(220 , 183, 40);*/
+    /*border-color: inherit;*/
+/*}*/
+#No,#sex,#parent1,#parent2,#grandMa{
+    background-color: inherit;
+}
+.example{
+    background-color: inherit;
+}
+/*学生信息详情*/
+.main{
+    margin-left: 9%;
+}
+.dialog>.example{
+    background-color: inherit;
+}
+/*取消按钮*/
+.qx{
+    background-color: inherit;
+    border: 1px solid rgb(220 , 183 , 40);
+    color: #FFFFFF;
+}

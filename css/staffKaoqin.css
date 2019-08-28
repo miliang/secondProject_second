@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    /*outline: solid;*/
+}
+body{
+    /*background-color: #1b6d85;*/
+    background-color:transparent
+}
+.header{
+    /*outline: 1px solid white;*/
+    margin: 1.5em 0 0 0 ;
+    height: 45px;
+    line-height: 45px;
+}
+.header>span,.return{
+    font-size: 1.5em;
+}
+.right{
+    text-align: right;
+}
+.form{
+    border:1px solid white;
+    margin-top: 1.5em;
+    padding: 20px 0;
+    border-radius: 0px;
+}
+/*-----------btn颜色待定------------------*/
+
+.table{
+    margin-top: 1.5em;
+    text-align: center;
+}
+.text-right{
+   padding:2px 0;
+}
+.row>div{
+    margin: 10px 0;
+}
+.form>div{
+    padding: 0 5px 0 0;
+}
+.form-group{
+    margin:0 0 0 3em ;
+}
+.form-control{
+    border: 1px solid white;
+    border-radius: 0;
+    height: 2em;
+    /*line-height: 1em;*/
+    padding: 0;
+    background-color: rgba(0,0,0,0.12);
+}
+label{
+    padding-top: 4px;
+}
+.btn:hover{
+    color: white;
+}
+a{
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+i:hover{
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+.table{
+    outline: 1px solid #dddddd;
+    margin-top: 1.5em;
+    text-align: center;
+}
+.pencil,.times{
+    font-size: 20px;
+}
+.times{
+    margin-left: 1.5em;
+}
+#ul{
+    width: 228px;
+    height: 30px;
+    line-height: 25px;
+    margin: 30px auto
+}
+#ul>li{
+    float: left;
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    list-style: none;
+    /*border-left: 1px solid white;*/
+}
+.btn{
+    background-color: #355e66;
+    border-radius: 0;
+}
+/*按钮背景色根据按钮种类来定*/
+.ourBtn{
+    height: 1.8em;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.8em;
+}
+.tton{
+    height: 30px;
+    width: 35px;
+    font-size: 8px;
+    margin-left: 0;
+    padding: 0;
+    color: #cccccc;
+}
+.tton:nth-child(1){
+    width: 40px;
+    border-right: 0;
+}
+.tton:nth-of-type(2){
+    border: 1px solid #70faff;
+}
+.tton:nth-of-type(5){
+    width: 45px;
+}
+#but{
+    border-right: 1px solid white;
+}
+.btn{
+    background-color:rgb(220, 183, 40);
+}

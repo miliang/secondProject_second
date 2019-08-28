@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--IE最高版本打开-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/personCenter.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row User ">
+        <div class="row yonghu"><!--用户资料-->
+            <div class="col-lg-2 col-md-8 col-lg-offset-2 col-md-offset-2 Header">
+                <span class="glyphicon glyphicon-user"></span>
+                <span >用户资料</span>
+
+            </div>
+            <div class="bianji">
+                <i class='fa fa-pencil-square-o pencil' aria-hidden='true'></i>
+                <span>编辑</span>
+            </div>
+
+        </div>
+        <div class="row Picture"><!--头像-->
+            <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 xinXi">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-lg-offset-1 col-md-offset-1" id="Photo"></div>
+                    <div class="col-lg-6 col-md-6 col-lg-offset-2 col-md-offset-2 Detailed"><!--详细信息-->
+                        <p class="fonT">李大鑫</p>
+                        <hr/>
+                        <p>开发经理在Riaxe</p>
+                        <p>电子邮件： ramanip@riaxe.com</p>
+                        <p>电话：（123）456-7890</p>
+                    </div>
+                </div>
+                <hr/>
+                <span  class="fonT">个人信息</span>
+                <!--<button type="button" class="btn btn-default">修改</button>-->
+                <hr/>
+                <div class="row zhiWei">
+                    <form class="form-inline">
+                        <div class="form-group col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
+                            <label>姓名：</label>
+                            <input type="text" class="form-control"  placeholder="李大鑫" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label >邮箱:</label>
+                            <input type="email" class="form-control" placeholder="ramanip@riaxe.com" readonly>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row zhiWei">
+                    <form class="form-inline">
+                        <div class="form-group col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
+                            <label>性别：</label>
+                            <select class="form-control" readonly>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >电话:</label>
+                            <input type="email" class="form-control"  placeholder="（123）456-7890" readonly>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row zhiWei">
+                    <form class="form-inline">
+                        <div class="form-group col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
+                            <label>职位：</label>
+                            <select class="form-control" readonly>
+                                <option value="3">管理员</option>
+                                <option value="1">园长</option>
+                                <option value="2">老师</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >部门:</label>
+                            <select class="form-control" readonly>
+                                <option value="1">教学部</option>
+                                <option value="3">后勤部</option>
+                                <option value="4">财务部</option>
+                                <option value="5">行政部</option>
+                                <option value="2">安保部</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="row zhiWei">
+                    <div class="col-lg-6 col-lg-offset-2 col-md-offset-2">
+                        <textarea class="form-control" name="ff" id="myr" cols="70" rows="10" readonly></textarea>
+                    </div>
+                </div>
+                <div class="row zhiWei">
+                    <div class="col-lg-4 col-md-4 col-lg-offset-6 col-md-offset-8">
+                        <button type="button" class="btn btn-default baoCun">保存</button>
+                        <button type="button" class="btn btn-default col-lg-offset-2 quXiao">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+<script src="../js/personCenter.js"></script>
+</body>
+</html>

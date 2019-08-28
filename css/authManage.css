@@ -1,0 +1,122 @@
+/*按钮背景色根据按钮种类来定*/
+
+.ourBtn{
+    height: 1.8em;
+    border: none;
+    text-align: center;
+    line-height: 1.8em;
+}
+body{
+    background-color: rgba(23, 174, 255, 0);
+    color: white;
+    font-family:"微软雅黑";
+    font-size: 14px;
+}
+
+.limits_1{
+font-size: 1.8rem;
+margin: 1em 0 1em 0;
+}
+.limits_2{
+    float: right;
+    margin: 1em 0 1em 0;
+    text-align: center;
+    line-height: 100%;
+}
+.form-inline{
+    margin: 1em 0 1em 0;
+}
+.color_1{
+    background-color: rgba(0, 0, 255, 0.12);
+}
+.modal-content{
+    font-size: 12px;
+    color: gray;
+}
+.limits_3{
+    margin: 1em 0 1em 0;
+}
+.search:hover{
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+.modal-header{
+    background-color: rgba(220,183,40,0.8);
+    color: white;
+    height: 50%;
+}
+#role_table>tbody>tr:nth-of-type(1){
+    background-color: rgba(0,0,0,0.12);
+}
+#role_table>tbody>tr:nth-of-type(3){
+    background-color: rgba(0,0,0,0.12);
+}
+#role_table>tbody>tr:nth-of-type(5){
+    background-color: rgba(0,0,0,0.12);
+}
+#role_table>tbody>tr:nth-of-type(7){
+    background-color: rgba(0,0,0,0.12);
+}
+#role_table>tbody>tr:nth-of-type(9){
+    background-color: rgba(0,0,0,0.12);
+}
+.btn{
+    background-color: rgb(220, 183, 40);
+
+}
+.btn:hover{
+    color: white;
+}
+.btn:active{
+    color: white;
+}
+.close>span{
+    color: white;
+}
+.close>span:hover{
+    color: white;
+    opacity: 1;
+}
+/*.modal-header{*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+.limits_2{
+    background-color: rgba(255, 255, 255, 0);
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border: none;
+    vertical-align: 100%;
+}
+.table>tbody>tr>td:last-of-type{
+    padding: 0px;
+}
+.btn{
+    color: white;
+    height: 1.8em;
+    /*line-height: 1.8em;*/
+    text-align: center;
+    /*margin-bottom: 0.5em;*/
+    border-radius: 0px;
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(220, 183, 40);
+
+}
+/*.modal-content{*/
+    /*background-color: rgba(255,255,255,0.8);*/
+/*}*/
+.btn-default,.btn-primary{
+    line-height: 100%;
+    border: none;
+}
+.btn-default,.btn-primary:hover{
+    border: none;
+}
+
+.btn.focus, .btn:focus, .btn:hover{
+    color: white;
+}

@@ -1,0 +1,73 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button class='btnadd'>添加</button><!--页面添加按钮-->
+　　<div class="mdBox">
+    <!--可设置CSS样式-->
+</div>
+　　<div class="addarr" style="color: white;background-color: #080808"><!--添加框--><!--可以设置CSS样式-->
+    　　<div class="addtitle">
+        　　添加名字
+        　　</div>
+    　　<lable>
+        　　姓名：<input type="text" id='name'/>
+        　　</lable>
+    　　<lable>
+        　　年龄：<input type="number" id='age'/>
+        　　</lable>
+    　　<button class='btnsure'>
+        　　确定
+        　　</button>
+    　　<button class='btncal'>
+        　　取消
+        　　</button>
+    　　</div>
+　　</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script>
+    var arr1=[
+        {name:'','age':''},/*输入添加的数据*/
+        {name:'','age':''},
+        {name:'','age':''},
+    ] /*原始数据*/
+    //这个数组该是后台传给我的p
+    function getarry(){
+        $('.mdBox span'/*填写你放内容的标签*/).remove();/*删除已有的姓名年龄*/
+        for(var i=0;i<arr1.length;i++){
+            /*删除在后边*/  $('.mdBox').append("<span>" + ""+'姓名：'+arr1[i].name+'年龄：'+arr1[i].age+'' + '<i class="del">' + '删除</span>' +"" + "</p>"
+            );
+        }	;
+    }
+    getarry(); //先把数据给输出到页面上
+    $(".btnadd").click(function(){
+        $(".addarr").show();
+    });
+    //    //点击出现添加框
+    $(".btnsure").click(function(){
+        var name=$('#name').val();
+        var age=$("#age").val();
+        var obj1={'name':name,'age':age};
+        arr1.push(obj1);
+        getarry();
+        $('#name').val("");
+        $("#age").val("");
+        $(".addarr").hide();
+    })
+    //    //点击确定将名字添加到数组中并展现到页面上
+    $(".btncal").on('click',function(){
+        $('.addarr').hide();
+    })
+    //取消添加
+
+    $('body').delegate('.del','click',function(){
+        console.log("gjlkjg");
+        var index=$(this).parent('li').index();/*当前输入LI的位置*/
+        arr1.splice(index,1);/*删除当前li*/
+        getarry();
+    })
+</script>
+</body>
+</html>

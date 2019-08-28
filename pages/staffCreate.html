@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>新增职工</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/class.css">
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <a href="staffManage.html" class="return">职工管理</a> <span>/ 新增职工</span>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 title">
+            职工详细信息
+        </div>
+    </div>
+    <div class="container c2">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffname">姓名</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="staffname" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffphone">电话</label>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 text-left">
+                <input type="text" id="staffphone" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffBirth">出生日期</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="staffBirth" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffAge">年龄</label>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 text-left">
+                <input type="email" class="form-control" id="staffAge" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffsex">性别</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <select id="staffsex" class="form-control">
+                    <option value="1">男</option>
+                    <option value="0">女</option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffemail">邮箱</label>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 text-left">
+                <input type="text" id="staffemail" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffdep">部门</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <select id="staffdep" class="form-control">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffclass">所带班级</label>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 text-left">
+                <select id="staffclass" class="form-control">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffrole">岗位角色</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="staffrole" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="staffAddress">住址</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="email" class="form-control" id="staffAddress" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
+                <button class="btn">保存</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left">
+                <button class="btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/staffCreate.js"></script>
+</body>
+</html>

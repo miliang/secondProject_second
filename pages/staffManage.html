@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=width-decide,intial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title></title>
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <span>职工管理</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header right">
+            <i class="fa fa-plus-circle circle" aria-hidden="true"></i>
+            <a href="staffCreate.html">新增职工</a>
+        </div>
+    </div>
+    <div class="row form">
+        <div class="col-md-1 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffNo2">职工编号</label>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStaffNo2" placeholder="201101">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffName2">职工姓名</label>
+        </div>
+        <div class="col-md-1 col-sm-2 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStaffName2" placeholder="李大鑫">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffDep2">职工所在部门</label>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStaffDep2" placeholder="行政部"/>
+        </div>
+        <div class="col-md-2 col-sm-5 col-xs-11 text-center">
+            <button class="btn">
+                <i class="fa fa-search search" aria-hidden="true"></i>
+                查询
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table">
+            <!--<th>bian</th>-->
+            <tr>
+                <td>职工编号</td>
+                <td>职工姓名</td>
+                <td>职工所在部门</td>
+                <td>岗位角色</td>
+                <td>电话</td>
+                <td>邮箱</td>
+                <td>所带班级</td>
+                <td>职工状态</td>
+                <td>操作</td>
+            </tr>
+        </table>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">职工信息详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-xs-6 col-sm-3">
+                                    <img src="../images/student/student4.jpg" alt=""/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleNo">职工编号</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleNo" placeholder="201102" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleName">职工姓名</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleName" placeholder="李小夏" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-offset-1 col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleSex">性别</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleSex" placeholder="女" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleBirth">出生日期</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleBirth" placeholder="1987-12-20" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class=" col-lg-offset-1col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleAge">年龄</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleAge" placeholder="30" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleStatus">工作状态</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleStatus" placeholder="在职" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleTel">联系电话</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleTel" placeholder="12345678902" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleDep">所在部门</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleDep" placeholder="行政部" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleRole">岗位角色</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleRole" placeholder="行政部主任" readonly/>
+                                </div>
+                                <div class=" col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <label for="exampleClass">所带班级</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleClass" placeholder="01" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-offset-1 col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleEmail">邮箱</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleEmail" placeholder="lixiaoxia@163.com" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleAddress">家庭住址</label>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-6 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleAddress" placeholder="四川省成都市武侯区" readonly/>
+                                </div>
+                            </div>
+                            <!--</div>-->
+                            <div class="row main">
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                    <label for="exampleMark">备注</label>
+                                </div>
+                                <div class="col-lg-6 col-md-7 col-sm-9 col-xs-10">
+                                    <textarea id="exampleMark" class="form-control example" rows="3" cols="20"  readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                    <!--</div>-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default qx" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myMo" tabindex="-1" role="dialog" aria-labelledby="myMoLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myMoLabel">修改职工信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="No">职工编号</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input class="form-control" type="text" placeholder="201102" id="No" readonly />
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="name">职工姓名</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" class="form-control" placeholder="李小夏" id="name"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="sex">性别</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" class="form-control" placeholder="女" readonly id="sex"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="age">年龄</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" class="form-control" placeholder="30" id="age"/>
+                                </div>
+                                <div class="col-lg-offset-2 col-lg-2 col-md-2 col-3 col-xs-4">
+                                    <img src="../images/student/student4.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="birth">出生日期</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="birth" class="form-control" placeholder="1987-12-20"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="status">工作状态</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="status" class="form-control" placeholder="在职"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="tel">联系方式</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="tel" class="form-control" placeholder="12345678902"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="department">部门</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="department" class="form-control" placeholder="行政部"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="myClass">所带班级</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="myClass" class="form-control" placeholder="01"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="email">邮箱</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="email" class="form-control" placeholder="lixiaoxia@163.com"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="address">家庭住址</label>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <input type="text" id="address" class="form-control" placeholder="四川省成都市武侯区"/>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="myMark">备注</label>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9">
+                                    <textarea id="myMark" class="form-control"  rows="6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default qx" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-default save" data-dismiss="modal">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul id="ul">
+            <li><button class=" btn btn-default tton disabled">Prev</button></li>
+            <li><button class="btn btn-default tton">1</button></li>
+            <li><button class="btn btn-default tton">2</button></li>
+            <li><button class="btn btn-default tton">3</button></li>
+            <li><button class="btn btn-default tton" id="but">Next</button></li>
+        </ul>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/staffManage.js"></script>
+</body>
+</html>

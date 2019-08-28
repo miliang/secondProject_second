@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=width-decide,intial-scale=1">
+    <!--<link rel="stylesheet" href="../css/bootstrap.min.css"/>-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/staffKaoqin.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <span>考勤管理</span>
+        </div>
+        <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header right">-->
+            <!--<i class="fa fa-plus-circle circle" aria-hidden="true"></i>-->
+            <!--<a href="staffCreate.html">新增职工</a>-->
+        <!--</div>-->
+    </div>
+    <div class="row form">
+        <div class="col-md-1 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffNo2">职工编号</label>
+        </div>
+        <div class="col-md-1 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStaffNo2" placeholder="201101">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffName2">职工姓名</label>
+        </div>
+        <div class="col-md-1 col-sm-2 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStaffName2" placeholder="李大鑫">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStaffDep2">职工所在部门</label>
+        </div>
+        <div class="col-md-1 col-sm-3 col-xs-6 text-left">
+            <!--<input type="text" class="form-control" id="exampleInputStaffDep2" placeholder="行政部"/>-->
+            <select id="exampleInputStaffDep2" class="form-control">
+                <option value="">--请选择--</option>
+                <option value="">行政部</option>
+                <option value="">教学部</option>
+                <option value="">安保部</option>
+                <option value="">后勤部</option>
+                <option value="">财务部</option>
+            </select>
+        </div>
+        <div class="col-md-2 col-sm-5 col-xs-11  text-right">
+            <button id="chaXun" class="btn">
+                <i class="fa fa-search search" aria-hidden="true"></i>
+                    查询
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <table class="table" id="staa">
+            <!--<th>bian</th>-->
+            <tr>
+                <td>职工编号</td>
+                <td>职工姓名</td>
+                <td>职工所在部门</td>
+                <td>岗位角色</td>
+                <td>考勤状态</td>
+                <td>邮箱</td>
+                <td>所带班级</td>
+                <td>职工状态</td>
+                <!--<td>操作</td>-->
+                <td></td>
+            </tr>
+
+             <!--<tr>-->
+                <!--&lt;!&ndash;<td></td>&ndash;&gt;-->
+                <!--<td colspan="10">-->
+                    <!--<ul id="ul">-->
+                        <!--<li><button class=" btn btn-default tton disabled">Prev</button></li>-->
+                        <!--<li><button class="btn btn-default tton">1</button></li>-->
+                        <!--<li><button class="btn btn-default tton">2</button></li>-->
+                        <!--<li><button class="btn btn-default tton">3</button></li>-->
+                        <!--<li><button class="btn btn-default tton" id="but">Next</button></li>-->
+                    <!--</ul>-->
+                <!--</td>-->
+            <!--</tr>-->
+        </table>
+    </div>
+</div>
+
+<script src="../bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/staffKaoqin.js"></script>
+</body>
+</html>

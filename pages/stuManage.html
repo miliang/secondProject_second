@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=width-decide,intial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title></title>
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <span>学生管理</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header right">
+            <i class="fa fa-plus-circle circle" aria-hidden="true"></i>
+            <a href="stuCreate.html">新增学生</a>
+        </div>
+    </div>
+    <div class="row form">
+        <div class="col-md-1 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStuID2">学生编号</label>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStuID2" placeholder="66601">
+        </div>
+        <div class="col-md-1 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStuName2">学生姓名</label>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStuName2" placeholder="李鑫鑫">
+        </div>
+        <div class="col-md-1 col-sm-3 col-xs-5 text-right">
+            <label for="exampleInputStuClass">学生班级</label>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 text-left">
+            <input type="text" class="form-control" id="exampleInputStuClass" placeholder="01"/>
+        </div>
+        <div class="col-md-2 col-sm-5 col-xs-11 text-center">
+            <button class="btn">
+                <i class="fa fa-search search" aria-hidden="true"></i>
+                查询
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table" id="table">
+            <tr>
+                <td>学生编号</td>
+                <td>学生姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+                <td>班级</td>
+                <td>学生父母</td>
+                <td>联系方式</td>
+                <td>邮箱</td>
+                <td>入学时间</td>
+                <td>状态</td>
+                <td>操作</td>
+            </tr>
+        </table>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span id="times" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">学生信息详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-xs-6 col-sm-3">
+                                    <img src="../images/student/student4.jpg" alt=""/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleNo">学生编号</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleNo" placeholder="66601" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleName">姓名</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleName" placeholder="李鑫鑫" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-offset-1 col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleSex">性别</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleSex" placeholder="男" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleBirth">出生日期</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleBirth" placeholder="2015-03-12" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class=" col-lg-offset-1col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleAge">年龄</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleAge" placeholder="3" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleStatus">学生状态</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleStatus" placeholder="上学" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-offset-1 col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleParent1">学生父亲</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleparent1" placeholder="李大大" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleTel">联系电话</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleTel" placeholder="13558587759" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleParent2">学生母亲</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleparent2" placeholder="李夫人" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="examplePhone">联系电话</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="examplePhone" placeholder="13649897526" readonly/>
+                                </div>
+                             </div>
+                            <div class="row main">
+                                <div class=" col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <label for="exampleGrandMa">紧急联系人</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleGrandMa" placeholder="李奶奶" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                    <label for="exampleTelPhone">联系电话</label>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <input type="text" class="form-control example" id="exampleTelPhone" placeholder="13647475751" readonly/>
+                                </div>
+                            </div>
+                            <div class="row main">
+                                    <div class="col-lg-offset-1 col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                        <label for="exampleEmail">邮箱</label>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                        <input type="text" class="form-control example" id="exampleEmail" placeholder="2016001@qq.com" readonly/>
+                                    </div>
+                                    <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                                        <label for="exampleAddress">家庭住址</label>
+                                    </div>
+                                    <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-6 col-xs-offset-1">
+                                        <input type="text" class="form-control example" id="exampleAddress" placeholder="四川省成都市高新区云华路" readonly/>
+                                    </div>
+                                </div>
+                            <!--</div>-->
+                            <div class="row main">
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                    <label for="exampleMark">备注</label>
+                                </div>
+                                <div class="col-lg-6 col-md-7 col-sm-9 col-xs-10">
+                                    <textarea id="exampleMark" class="form-control example" rows="3" cols="20"  readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                            <!--</div>-->
+                        </div>
+                    <!--</div>-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default qx" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myMo" tabindex="-1" role="dialog" aria-labelledby="myMoLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myMoLabel">修改学生信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="No">学生编号</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input class="form-control" type="text" placeholder="66607" id="No" readonly />
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="name">学生姓名</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" id="name" class="form-control" placeholder="黄二君"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="sex">性别</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" class="form-control"  readonly id="sex"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="age">年龄</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-4">
+                                    <input type="text" class="form-control" placeholder="3" id="age"/>
+                                </div>
+                                <div class="col-lg-offset-2 col-lg-2 col-md-2 col-3 col-xs-4">
+                                    <img src="../images/student/student4.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="birth">出生日期</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="birth" class="form-control" placeholder="2015-03-12"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm 2 col-xs-3">
+                                    <label for="status">状态</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="status" class="form-control" placeholder="上学"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="parent1">学生父亲</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="parent1" class="form-control" placeholder="黄大大" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="tel">联系方式</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="tel" class="form-control" placeholder="13525487963"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="parent2">学生母亲</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="parent2" class="form-control" placeholder="黄妈妈" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="phone">联系方式</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="phone" class="form-control" placeholder="15369874521"/>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <label for="grandMa">紧急联系人</label>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <input type="text" id="grandMa" class="form-control" placeholder="黄奶奶" readonly/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="telephone">联系方式</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="telephone" class="form-control" placeholder="15387562456"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="email">邮箱</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="email" class="form-control" placeholder="2016001@qq.com"/>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="address">家庭住址</label>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                    <input type="text" id="address" class="form-control" placeholder="四川省成都市郫都区"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                                    <label for="myMark">备注</label>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                    <textarea id="myMark" class="form-control"  rows="6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default qx" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-default save" data-dismiss="modal">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul id="ul">
+            <li><button class=" btn btn-default tton disabled">Prev</button></li>
+            <li><button class="btn btn-default tton">1</button></li>
+            <li><button class="btn btn-default tton">2</button></li>
+            <li><button class="btn btn-default tton">3</button></li>
+            <li><button class="btn btn-default tton" id="but">Next</button></li>
+        </ul>
+    </div>
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/public.js"></script>
+<script src="../js/stuManage.js"></script>
+
+</body>
+</html>

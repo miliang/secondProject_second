@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>班级相册</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Image Wall with jQuery and CSS3" />
+    <meta name="keywords" content="jquery, css3, images, wall, thumbnails, slide, animate"/>
+    <meta name="author" content="Codrops" />
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/fourClassAlbum.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />-->
+    <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <h1>Class Album</h1>
+            <span>Our happy memories</span>
+            <div class="createAlbum">
+                <p>
+                    <i class="fa fa-plus-circle circle" aria-hidden="true"></i>
+                    新建相册
+                </p>
+            </div>
+        </header>
+    </div>
+   <div class="row">
+       <div class="iw_wrapper">
+           <ul class="iw_thumbs" id="iw_thumbs">
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/12.jpg" alt=""/>
+                   </a>
+                   <div>
+                        <h2>class 01</h2>
+                        <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/10.jpg" alt=""/>
+                   </a>
+                   <div>
+                        <h2>class 02</h2>
+                        <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/5.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 03</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li class="xixi">
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/9.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 04</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/2.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 05</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/7.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 06</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/11.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 07</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+               <li>
+                   <a href="class01Album.html" target="iframe">
+                       <img src="../images/thumbs/15.jpg" alt=""/>
+                   </a>
+                   <div>
+                       <h2>class 08</h2>
+                       <p>纯真的笑脸，美好的回忆</p>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </div>
+</div>
+<script src="../bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
+
+<script type="text/javascript">
+    var newAlbum;
+     $(".createAlbum").click(function () {
+         newAlbum=$(
+             "<a href='emptyAlbum.html' target='iframe'>"+
+             "<li>"+
+             "<img src='../images/noImg.png' class=' '/>"+
+             "</a>"+
+             "<div>"+
+             "<input type='text' class='bianhao' placeholder='班级编号'/>"+
+             "<input type='text' class='miaoshu' placeholder='相册描述'/>"+
+         "</div>"+
+         "</li>");
+
+         $(".iw_thumbs").append(newAlbum);
+         $(".bianhao").css({
+            "font-style":"italic",
+             "font-size":"14px",
+             "color":" #e5e5e5",
+             "text-shadow":"0 0 1px #fff"
+         });
+         $(".miaoshu").css({
+             "color":"white"
+         });
+         console.log($("input"));
+         $("input").click(function () {
+             $("input").css("border","none");
+         })
+     })
+
+
+</script>
+</body>
+</html>

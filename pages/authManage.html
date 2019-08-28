@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/authManage.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+            <label class="limits_1">权限管理</label>
+            <!--<button type="button" class="ourBtn limits_2 btn" data-target="#newRole" data-toggle="modal"-->
+                    <!--aria-hidden="true"><i class="fa fa-plus-circle "-->
+                                          <!--aria-hidden="true">新增机构</i></button>-->
+    </div>
+    <!--<div class="row">-->
+        <!--<form class="form-inline">-->
+            <!--<div class="form-group">-->
+                <!--<label for="exampleInputDepMan">角色名</label>-->
+                <!--<input type="text" class="form-control" id="exampleInputDepMan" placeholder="园长"/>-->
+            <!--</div>-->
+            <!--<button class="fa fa-search ourBtn" aria-hidden="true"></button>-->
+        <!--</form>-->
+    <!--</div>-->
+    <div class="row">
+        <table class="table text-center" id="role_table">
+            <tr>
+                <td>机构</td>
+                <td>说明</td>
+                <td>权限</td>
+                <td>人员具体权限</td>
+                <td>操作</td>
+            </tr>
+            <!--<tr >-->
+                <!--<td>行政</td>-->
+                <!--<td>行政部门</td>-->
+                <!--<td>公告、员工、考勤</td>-->
+                <!--<td class="search"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+                <!--<td><button  class="fa fa-pencil-square-o btn" aria-hidden="true" type="button" data-toggle="modal" data-target="#limits_01">修改权限</button></td>-->
+            <!--</tr>-->
+            <!--<tr >-->
+                <!--<td>安保</td>-->
+                <!--<td>安保部门</td>-->
+                <!--<td>公告、员工、考勤</td>-->
+                <!--<td class="search"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+                <!--<td><button  class="fa fa-pencil-square-o btn" aria-hidden="true" type="button" data-toggle="modal" data-target="#limits_01">修改权限</button></td>-->
+            <!--</tr>-->
+            <!--<tr >-->
+                <!--<td>后勤</td>-->
+                <!--<td>后勤部门</td>-->
+                <!--<td>公告、员工、考勤</td>-->
+                <!--<td class="search"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+                <!--<td><button  class="fa fa-pencil-square-o btn" aria-hidden="true" type="button" data-toggle="modal" data-target="#limits_01">修改权限</button></td>-->
+            <!--</tr>-->
+            <!--<tr >-->
+                <!--<td>财政</td>-->
+                <!--<td>财政部门</td>-->
+                <!--<td>公告、员工、考勤</td>-->
+                <!--<td class="search"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+                <!--<td><button  class="fa fa-pencil-square-o btn" aria-hidden="true" type="button" data-toggle="modal" data-target="#limits_01">修改权限</button></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>教学</td>-->
+                <!--<td>教学部门</td>-->
+                <!--<td>邮件、公告、学生</td>-->
+                <!--<td class="search"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+                <!--<td><button  class="fa fa-pencil-square-o btn" aria-hidden="true" type="button" data-toggle="modal" data-target="#limits_02" >修改权限</button></td>-->
+            <!--</tr>-->
+        </table>
+    </div>
+
+    <!-- 修改权限 -->
+    <div class="modal fade mycolor" id="limits_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">修改权限</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div>园区类</div>
+                            <div><input type="checkbox" ><span >园区公告</span></div>
+                            <div><input type="checkbox" checked="checked"><span>园区邮件</span></div>
+                            <div><input type="checkbox" checked="checked"><span>员工管理</span></div>
+                            <div><input type="checkbox" ><span>学生管理</span></div>
+                            <div><input type="checkbox" checked="checked"><span>考勤、修改、批准</span></div>
+                            <div><input type="checkbox" ><span>照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>班级类</div>
+                            <div><input type="checkbox" checked="checked"><span>班级公告查看、修改、删除</span></div>
+                            <div><input type="checkbox" ><span>班级学生查看、修改</span></div>
+                            <div><input type="checkbox" checked="checked"><span>班级邮件发布、查看</span></div>
+                            <div><input type="checkbox" ><span>学生管理</span></div>
+                            <div><input type="checkbox" checked="checked"><span>班级照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>员工类</div>
+                            <div><input type="checkbox" ><span>查看考勤</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 修改权限 -->
+    <div class="modal fade"  id="limits_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">修改权限</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div>园区类</div>
+                            <div><input type="checkbox"><span>园区公告</span></div>
+                            <div><input type="checkbox"><span>园区邮件</span></div>
+                            <div><input type="checkbox"><span>员工管理</span></div>
+                            <div><input type="checkbox"><span>学生管理</span></div>
+                            <div><input type="checkbox"><span>考勤、修改、批准</span></div>
+                            <div><input type="checkbox"><span>照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>班级类</div>
+                            <div><input type="checkbox" checked="checked"><span>班级公告查看、修改、删除</span></div>
+                            <div><input type="checkbox" checked="checked"><span>班级学生查看、修改</span></div>
+                            <div><input type="checkbox" checked="checked"><span>班级邮件发布、查看</span></div>
+                            <div><input type="checkbox" checked="checked"><span>学生管理</span></div>
+                            <div><input type="checkbox" checked="checked"><span>班级照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>员工类</div>
+                            <div><input type="checkbox" checked="checked"><span>查看考勤</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新增角色 -->
+    <div class="modal fade" id="newRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">新增角色</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr id="new_role1">
+                            <td>角色：<input type="text" ></td>
+                            <td>说明：<input type="text" ></td>
+                            <td>权限：<input type="text" ></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default " data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary " data-dismiss="modal" id="new_role">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--权限详情-->
+    <div class="modal fade" id="searchRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">职工权限详情</h4>
+                </div>
+                <div class="modal-body" >
+                    <table id="search_Role" class="table text-center">
+                        <th colspan="2">行政部</th>
+
+                    </table>
+                    <table id="search_Role1" class="table text-center">
+                        <th colspan="2">教学部</th>
+                    </table>
+                    <table id="search_Role2" class="table text-center">
+                        <th colspan="2">安保部</th>
+                    </table>
+                    <table id="search_Role3" class="table text-center">
+                        <th colspan="2">后勤部</th>
+                    </table>
+                    <table id="search_Role4" class="table text-center">
+                        <th colspan="2">财务部</th>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" >保存</button>
+                </div>
+            </div>
+        </div>
+    </div><!--权限详情-->
+    <div class="modal fade" id="searchRole1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">职工权限详情</h4>
+                </div>
+                <div class="modal-body" >
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="search_baocun">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--增加角色的权限模板-->
+    <div class="modal fade mycolor limits_0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">修改权限</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div>园区类</div>
+                            <div><input type="checkbox" ><span >园区公告</span></div>
+                            <div><input type="checkbox" ><span>园区邮件</span></div>
+                            <div><input type="checkbox" ><span>员工管理</span></div>
+                            <div><input type="checkbox" ><span>学生管理</span></div>
+                            <div><input type="checkbox" ><span>考勤、修改、批准</span></div>
+                            <div><input type="checkbox" ><span>照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>班级类</div>
+                            <div><input type="checkbox"><span>班级公告查看、修改、删除</span></div>
+                            <div><input type="checkbox" ><span>班级学生查看、修改</span></div>
+                            <div><input type="checkbox" ><span>班级邮件发布、查看</span></div>
+                            <div><input type="checkbox" ><span>学生管理</span></div>
+                            <div><input type="checkbox" ><span>班级照片墙修改、删除、查看</span></div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>员工类</div>
+                            <div><input type="checkbox" ><span>查看考勤</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../js/authManage.js"></script>
+
+</body>
+</html>

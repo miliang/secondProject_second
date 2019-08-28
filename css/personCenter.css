@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    /*font-size: 14px;*/
+    font-family:"Î¢ÈíÑÅºÚ";
+}
+body{
+    /*background: inherit;*/
+    /*background-color:grey;*/
+    background-color: rgba(255,255,255,0.12);
+
+}
+.User{
+    position: relative;
+    /*background-color: rgba(0, 0, 0, 0.29);*/
+}
+.Header{
+    /*border: 1px solid black;*/
+    height: 100px;
+    /*margin-top: 2%;*/
+    /*line-height: 100px;*/
+    padding-top: 40px;
+    /*background-color: rgba(0, 0, 0, 0.76);*/
+    font-size: 1.5em;
+    /*background-color: rgba(0, 0, 0, 0.38);*/
+}
+
+#Photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url("../imger/touxiang.jpg");
+    background-size: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.xinXi{
+    /*background-color: rgba(0, 0, 0, 0.22);*/
+    /*font-size: 1.5em;*/
+}
+.fonT{
+    font-size: 1.5em;
+}
+.Detailed{
+    padding-top: 2%;
+}
+.form-control{
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(19, 43, 49, 0.3);
+}
+.baoCun{
+    background-color: rgb(220, 183, 40);
+    color: white;
+    border-radius: 0;
+}
+.baoCun:hover{
+    background-color: rgb(220, 183, 40);
+    color: white;
+}
+.quXiao:hover{
+    background-color: rgb(220, 183, 40);
+    color: white;
+}
+.quXiao{
+    background-color:rgb(220, 183, 40);
+    color: white;
+    border-radius: 0;
+}
+.form-control::-webkit-input-placeholder{
+    color: white;
+}
+.zhiWei{
+    padding-top: 5%;
+}
+#myr{
+    background: inherit;
+}
+.form-control{
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.12);
+}
+.yonghu{
+    position: relative;
+}
+.bianji{
+    font-size: 14px;
+    position: absolute;
+    top:45%;
+    left:75%;
+}

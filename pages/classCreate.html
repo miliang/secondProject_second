@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>新增班级</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/class.css">
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <a href="class.html" class="return">班级管理</a> <span>/ 新增班级</span>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 title">
+            班级详细信息
+        </div>
+    </div>
+    <div class="container c2">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classroom">教室</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-left">
+                <select id="classroom" class="form-control">
+                    <option>1教</option>
+                    <option>2教</option>
+                    <option>3教</option>
+                    <option>4教</option>
+                    <option>5教</option>
+                    <option>6教</option>
+                    <option>7教</option>
+                    <option>8教</option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classnum">人数</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="classnum" class="form-control classnum" value="30" readonly>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classstage">当前阶段</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-left">
+                <input type="text" id="classstage" class="form-control" value="小班" readonly>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classqq">QQ群</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="classqq" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classzteacher">主班老师</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-left">
+                <select id="classzteacher" class="form-control">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classzp">联系方式</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="classzp" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classfteacher">副班老师</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-left">
+                <select id="classfteacher" class="form-control">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classfp">联系方式</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="classfp" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classsteacher">生活老师</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-left">
+                <select id="classsteacher" class="form-control">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="classsp">联系方式</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="classsp" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="bz">备注</label>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text-left">
+                <textarea cols="100%" rows="5em" class="form-control" id="bz"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-7 bc">
+                <button class="btn" href="#">保存</button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-1 qx">
+                <button class="btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/classCreate.js"></script>
+<!--<script src="../js/class.js"></script>-->
+</body>
+</html>

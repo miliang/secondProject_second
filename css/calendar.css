@@ -1,0 +1,29 @@
+
+body {
+    /*margin-top: 40px;*/
+    /*text-align: center;*/
+    font-size: 14px;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    background-color: rgba(0, 72, 255, 0);
+}
+#calendar {
+    width:96%;
+    margin: 0 auto;
+    /*height: 81rem;*/
+}
+label{
+    padding: 1em 0 0 1em;
+    /*margin-left: 1em;*/
+    font-size: 2em;
+}
+.iconBox{
+    width: 98.5%;
+    margin: auto;
+    padding-top: 1.2em;
+    font-size: 1.5em;
+    height: 4em;
+    background-color: rgba(8, 8, 8, 0.27);
+}
+.iconBox>i{
+    padding: 0 0 0 1em;
+}

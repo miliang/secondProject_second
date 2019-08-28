@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>新增部门</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/class.css">
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 header">
+            <a href="depManage.html" class="return">部门管理</a> <span>/ 新增部门</span>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 title">
+            职工详细信息
+        </div>
+    </div>
+    <div class="container c2">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="depname">部门名称</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="depname" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="depnum">部门人数</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="depnum" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="depman">部门主管</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <input type="text" id="depman" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                <label for="depPlace">部门所在地</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
+                <!--<input type="text" id="depPlace" class="form-control">-->
+                <select id="depPlace" class="form-control">
+                    <option>所在位置</option>
+                    <option>一教</option>
+                    <option>二教</option>
+                    <option>三教</option>
+                    <option>四教</option>
+                    <option>五教</option>
+                    <option>六教</option>
+                    <option>七教</option>
+                    <option>八教</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-right">
+                备注
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text-left">
+                <textarea cols="100%" rows="5em" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-7 bc">
+                <button class="btn">保存</button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-1 qx">
+                <button class="btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!--<script src="../js/staffCreate.js"></script>-->
+</body>
+</html>

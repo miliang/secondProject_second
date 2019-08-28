@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>二阶段项目</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/kaohe1css.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <form action="#" class="form-inline sou">
+            <div  class="form-group">
+                <label for="sousuo">
+                    <span class="glyphicon glyphicon-search"></span>
+                    搜索：
+                </label>
+                <input type="text" id="sousuo"/>
+            </div>
+            <div class="form-group">
+                公告类型：
+                <select class="form-control">
+                    <option value="volvo">工作事项</option>
+                    <option value="saab">活动事宜</option>
+                    <option value="opel">紧急通知</option>
+                </select>
+            </div>
+            <div class="form-group">
+                发布时间：
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <button class="btn">查询</button>
+            </div>
+        </form>
+    </div>
+    <div class="row zengj">
+        <a class="btn btn-default" href="annouce.html" role="button" type="submit" onclick="tianjia1()">
+            <span class="glyphicon glyphicon-plus"></span>
+            增加
+        </a>
+    </div>
+    <div class="row">
+        <div class="table-responsive">
+            <table cellspacing="0" cellpadding="0" class="table table-hover">
+                <tr>
+                    <th>序号</th>
+                    <th>公告类型</th>
+                    <th>标题</th>
+                    <th>公告状态</th>
+                    <th>时间</th>
+                    <th colspan="1">编辑</th>
+                    <th>详情</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>工作</td>
+                    <td>致员工书</td>
+                    <td>发布</td>
+                    <td>2017-3-27</td>
+                    <td>
+                        <a href="#"><span class="glyphicon glyphicon-remove bianji"></span></a>
+                    </td>
+                    <td>
+                        <a href="#" data-toggle="modal" data-target="#xiangqi">查看详情</a>
+                    </td>
+                </tr>
+                <tr id="aaaaa">
+                    <td>2</td>
+                    <td>活动</td>
+                    <td>2018元旦文艺节目表演</td>
+                    <td>发布</td>
+                    <td>2017-3-27</td>
+                    <td>
+                        <a href="#"><span class="glyphicon glyphicon-remove bianji"></span></a>
+                    </td>
+                    <td><a href="#" data-toggle="modal" data-target="#xiangqi">查看详情</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>紧急通知</td>
+                    <td>近日有关地震的应对</td>
+                    <td>发布</td>
+                    <td>2017-3-27</td>
+                    <td>
+                        <a href="#"><span class="glyphicon glyphicon-remove bianji"></span></a>
+                    </td>
+                    <td><a href="#" data-toggle="modal" data-target="#xiangqi">查看详情</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>工作</td>
+                    <td>致员工书</td>
+                    <td>发布</td>
+                    <td>2017-3-27</td>
+                    <td>
+                        <a href="#"><span class="glyphicon glyphicon-remove bianji"></span></a>
+                    </td>
+                    <td><a href="" data-toggle="modal" data-target="#xiangqi">查看详情</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>工作</td>
+                    <td>致员工书</td>
+                    <td>发布</td>
+                    <td>2017-3-27</td>
+                    <td>
+                        <a href="#"><span class="glyphicon glyphicon-remove bianji"></span></a>
+                    </td>
+                    <td><a href="#" data-toggle="modal" data-target="#xiangqi">查看详情</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+<!--<div class="modal fade bs-example-modal-lg" id="xiangqi" role="dialog">-->
+    <!--<div class="modal-dialog modal">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--&lt;!&ndash;<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>&ndash;&gt;-->
+                <!--<h4>公告详情</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--第三方中黑色短裤几乎都是-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<input type="button" value="提交" class="btn btn-success"/>-->
+                <!--<input type="button" value="关闭" class="btn btn-primary"  data-dismiss="modal"/>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- Modal -->
+<div class="modal fade" id="xiangqi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color: black">公告详情</h4>
+            </div>
+            <div class="modal-body">
+                <table cellspacing="0" cellpadding="0" class="table table-hover" style="color: black">
+                    <tr>
+                        <td style="color: black">公告类型</td>
+                        <td>工作事项</td>
+                    </tr>
+                    <tr>
+                        <td>标题</td>
+                        <td>致员工书</td>
+                    </tr>
+                    <tr>
+                        <td>发布范围</td>
+                        <td>全部职工</td>
+                    </tr>
+                    <tr>
+                        <td>发布时间</td>
+                        <td>2017-3-25</td>
+                    </tr>
+                    <tr>
+                        <td>内容</td>
+                        <td><div class="neiqian">发GV和我说了可访问速度快来个简单死了个人封面奶萨</div></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <input type="button" value="关闭" class="btn btn-primary" data-dismiss="modal"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../kaohe.js"></script>
+<!--<script src="../js/annouce.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/annouce.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-1">
+            <i class="fa fa-times " aria-hidden="true"></i>
+        </div>
+        <div class="col-lg-10"></div>
+        <div class="col-lg-1"> <label>公告<small>发布公告</small></label></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="authManage.html" method="post">
+                <table class="table">
+                    <tr>
+                        <td >公告类型：</td>
+                        <td>
+                            <select>
+                                <option>工作事项</option>
+                                <option>活动事宜</option>
+                                <option>紧急通知</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>置顶：</td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+                    <tr>
+                        <td>标题：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>发布范围：</td>
+                        <td>
+                            <select>
+                                <option>全部职工</option>
+                                <option>全部管理</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>发布时间：</td>
+                        <td>发布时间：</td>
+                    </tr>
+                    <tr>
+                        <td>内容：</td>
+                        <td >
+                            <textarea required maxlength="500" ></textarea>
+                            <p class="aa text-right" ><span>0</span>/500</p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="发布" class="pull-right ourBtn">
+            </form>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/annouce.js"></script>
+
+</body>
+</html>

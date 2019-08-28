@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    /*background-color:transparent;*/
+    background-color: rgba(255,255,255,0.12);
+}
+.btn{
+    margin-top: 5%;
+    border-radius: 0;
+}
+#main{
+    width: 600px;
+    height: 500px;
+    margin-top: 2%;
+}
+@media screen and (max-width: 600px)  {
+    #main{
+        width: 600px;
+    }
+}

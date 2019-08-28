@@ -1,0 +1,54 @@
+/*class*/
+body{
+    background-color: rgba(255, 255, 255, 0);
+}
+#classStage{
+    color: #999999;
+}
+#classStage>option{
+    color: #999999;
+}
+
+/*addclass*/
+*{
+    /*outline: solid;*/
+}
+/*#class{*/
+    /*color: #999999;*/
+/*}*/
+#classroom>option{
+    color: #999999;
+}
+#classteacher>option{
+    color: #999999;
+}
+#classstage{
+    width: 100%;
+}
+#staffdep>option{
+    color: #999999;
+}
+#staffsex>option{
+    color: #999999;
+}
+#staffclass>option{
+    color:#999999;
+}
+textarea{
+    resize: none;
+}
+.bc{
+    text-align: right;
+}
+.qx{
+    text-align: right;
+    /*padding: 0;*/
+}
+.title{
+    text-align: right;
+    font-size: 20px;
+}
+.c2{
+    outline: 1px solid white;
+    width: 75%;
+}

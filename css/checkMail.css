@@ -1,0 +1,157 @@
+/**{*/
+    /*background-color: rgba(255, 255, 255, 0.12);*/
+/*}*/
+p{
+    font-size: 1.5em;
+    padding-top: 3%;
+}
+.fa-bold{
+    color: white;
+}
+.f-html .froala-element{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.froala-element.f-basic{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.fa-italic:before{
+    color: white;
+}
+.fa-underline:before{
+    color: white;
+}
+.fa-strikethrough:before{
+    color: white;
+}
+.froala-editor .fr-dropdown .fr-trigger{
+    color: white;
+}
+.froala-editor .fr-trigger:after{
+    border-top-color:white ;
+}
+.fa-list-ol:before{
+    color: white;
+}
+.fa-list-ul:before{
+    color: white;
+}
+.fa-dedent:before, .fa-outdent:before{
+    color: white;
+}
+.fa-indent:before{
+    color: white;
+}
+.fa-chain:before, .fa-link:before{
+    color: white;
+}
+.froala-editor.f-basic{
+    /*border-top: 3px;*/
+}
+.fa-photo:before, .fa-image:before, .fa-picture-o:before{
+    color: white;
+}
+.fa-video-camera:before{
+    color: white;
+}
+.fa-code:before{
+    color: white;
+}
+.fa-rotate-left:before, .fa-undo:before{
+    color: white;
+}
+.fa-rotate-right:before, .fa-repeat:before{
+    color: white;
+}
+.fa-text-height:before{
+    color: white;
+}
+.fa-text-height:before{
+    color: white;
+}
+.froala-editor button.fr-bttn:disabled:after, .froala-editor button.fr-trigger:disabled:after{
+    border-top-color: white!important;
+}
+.fa-font:before{
+    color: white;
+}
+.fa-tint:before{
+    color: white;
+}
+.fa-paragraph:before{
+    color: white;
+}
+.fa-magic:before{
+    color: white;
+}
+.fa-align-center:before{
+    color: white;
+}
+.fa-table:before{
+    color: white;
+}
+.fa-align-left:before{
+    color: white;
+}
+.froala-element.f-basic{
+    border: white solid 1px;
+}
+.froala-editor{
+    border: white solid 1px;
+}
+.froala-editor.f-basic{
+    /*background-color: rgba(255, 255, 255, 0.12);*/
+    background-color:rgba(0, 0, 0, 0.1);
+}
+body {
+    /*text-align: center;*/
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+label{
+    font-size: 14px;
+}
+input{
+    /*background-color: rgba(255, 255, 255, 0.12);*/
+    border:1px solid #c9c9c9;
+    background-color:rgba(0, 0, 0, 0.1);
+    /*text-align: center;*/
+}
+button{
+    color: white;
+    background-color: #dcb728;
+    border-radius: 0;
+    border: none;
+    height: 1.8em;
+    /*text-align: right;*/
+    /*padding-left: 30%;*/
+}
+.f-placeholder{
+    height: 200px;
+}
+section {
+    width: 80%;
+    /*margin: auto;*/
+    /*text-align: left;*/
+    /*height: 300px;*/
+    /*text-align: center;*/
+}
+.length{
+    width: 80%;
+}
+.mySection{
+    /*width: 80%;*/
+    /*height: 30%;*/
+}
+.container>.Box:nth-of-type(1){
+    /*padding-top: 3%;*/
+}
+.Box{
+    padding-top: 1%;
+}
+.btnBox{
+    padding-left: 70%;
+    padding-top: 3%;
+}
+.btnBox>button:nth-of-type(2){
+    margin-left: 8%;
+}

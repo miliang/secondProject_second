@@ -1,0 +1,88 @@
+body {
+background-image: url("../images/demo-1-bg.jpg");
+}
+*{
+    font-size: 14px;
+}
+.lie{
+    /*border: white solid ;*/
+}
+.welcome{
+    text-align: center;
+    padding-top: 5em;
+    color: white;
+    font-size: 30px;
+    opacity: 0.5;
+}
+.accountBox{
+    text-align: center;
+    margin-top: 3em;
+    color: white;
+}
+.accountChinese{
+    font-size: 16px;
+    /*padding-right: 3em;*/
+    /*margin-bottom: auto;*/
+    opacity: 0.5;
+}
+.accountIcon{
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0.3) solid 1px;
+    border-radius: 20px;
+}
+.accountInpt{
+    /*height: 3em;*/
+    /*/!*padding-left: 2em;*!/*/
+    /*margin-left: 2em;*/
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0.3) solid 1px;
+}
+.passwordBox{
+    color: white;
+   text-align: center;
+    margin-top: 1em;
+}
+.passwordChinese{
+    font-size: 16px;
+    opacity: 0.5;
+}
+.passwordIcon{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0.3) solid 1px;
+}
+.passwordInpt{
+    /*height: 3em;*/
+    /*/!*padding-left: 2em;*!/*/
+    /*margin-left: 2em;*/
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0.3) solid 1px;
+}
+.relay{
+
+    color: white;
+    margin-left: 14em;
+    margin-top: 300%;
+}
+.logOnbox{
+    text-align: center;
+}
+.relayBox{
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 2em;
+}
+.logOn{
+    margin-top: 1em;
+    width: 13em;
+    height: 2.3em;
+    border-radius: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 0.78);
+    padding-top: 0.5em;
+    /*margin-left: 4em;*/
+    font-size: 18px;
+    background-color: rgba(2, 151, 230, 0.8);
+}

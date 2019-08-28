@@ -1,0 +1,40 @@
+body{
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+/*#annThings{*/
+    /*margin-top: 2%;*/
+/*}*/
+/*.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{*/
+    /*border-style: none;*/
+/*}*/
+i{
+    margin-left: 15%;
+    cursor: pointer;
+}
+input,select,option{
+    background-color:rgba(0,0,0,.12);
+    border: none;
+
+}
+.ourBtn{
+    height: 1.8em;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 100%;
+    background-color: rgb(220, 183, 40);
+    width: 50%;
+}
+.ourBtn:hover{
+    color: white;
+}
+.myP{
+    font-size: 1.8rem;
+    margin-top: 1em;
+}
+
+
+
+
